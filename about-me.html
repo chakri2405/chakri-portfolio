@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Me - Chakradhar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="aboutme.css" />
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+  <h1>About Me</h1>
+  <nav>
+    <a href="about.html"><button>About</button></a>
+    <a href="skills.html"><button>Skills</button></a>
+    <a href="project.html"><button>Projects</button></a>
+    <a href="aboutme.html"><button>About Me</button></a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="about-text">
+    <p>My name is G. Chakradhar. I am 18 years old and currently studying at Saveetha School of Engineering.</p>
+    <p><strong>Program:</strong> COMPUTER SCIENCE AND ENGINEERING</p>
+    <p>My grades for the college were:</p>
+  </div>
+
+  <table>
+    <tr>
+      <th width="200">COURSE CODE</th>
+      <th width="300">COURSE NAME</th>
+      <th width="120">GRADE</th>
+    </tr>
+    <tr><td>CSA14</td><td>Compiler Design</td><td>B</td></tr>
+    <tr><td>CSA04</td><td>Operating Systems</td><td>A</td></tr>
+    <tr><td>CSA06</td><td>Design and Analysis of Algorithms</td><td>B</td></tr>
+    <tr><td>CSA07</td><td>Computer Networks</td><td>A</td></tr>
+    <tr><td>CSA08</td><td>Python Programming</td><td>A</td></tr>
+    <tr><td>CSA03</td><td>Data Structures</td><td>B</td></tr>
+    <tr><td>UBA04</td><td>Discrete Mathematics</td><td>S</td></tr>
+    <tr><td>DSA01</td><td>Object Oriented Programming with C++</td><td>B</td></tr>
+    <tr><td>CSA02</td><td>C Programming</td><td>B</td></tr>
+    <tr><td>CSA12</td><td>Computer Architecture</td><td>B</td></tr>
+    <tr><td>ECA47</td><td>Principles of Digital System Design</td><td>A</td></tr>
+    <tr><td>UBA48</td><td>Engineering Physics</td><td>B</td></tr>
+    <tr><td>UBA01</td><td>Engineering Mathematics - I</td><td>S</td></tr>
+    <tr><td>BTA01</td><td>Biology and Environmental Science for Engineers</td><td>B</td></tr>
+    <tr><td>UBA28</td><td>Professional Ethics and Legal Practices</td><td>B</td></tr>
+    <tr><td>CSA51</td><td>Cryptography and Network Security</td><td>A</td></tr>
+    <tr><td>CSA17</td><td>Artificial Intelligence</td><td>A</td></tr>
+    <tr><td>CSA13</td><td>Theory of Computation</td><td>B</td></tr>
+    <tr><td>UBA06</td><td>Applied Mathematics</td><td>A</td></tr>
+    <tr><td>SPIC1</td><td>Project 1</td><td>B</td></tr>
+    <tr><td>CSA14</td><td>Compiler Design</td><td>B</td></tr>
+    <tr><td>CSA11</td><td>Object Oriented Analysis and Design</td><td>A</td></tr>
+    <tr><td>CSA15</td><td>Cloud Computing and Big Data Analytics</td><td>B</td></tr>
+  </table>
+
+  <div class="image-container">
+    <img src="grade.png" alt="Grade Image" />
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Chakradhar's Portfolio
+</footer>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 60, density: { enable: true, value_area: 800 } },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.3 },
+    size: { value: 3, random: true },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.2,
+      width: 1,
+    },
+    move: { enable: true, speed: 2 },
+  },
+  interactivity: {
+    events: { onhover: { enable: true, mode: "repulse" } },
+    modes: { repulse: { distance: 100 } },
+  },
+  retina_detect: true,
+});
+</script>
+
+<script>
+  const img = document.querySelector('.image-container img');
+
+  img.addEventListener('click', () => {
+    img.classList.remove('image-rotate');
+    void img.offsetWidth; // Trigger reflow
+    img.classList.add('image-rotate');
+  });
+</script>
+
+</body>
+</html>
